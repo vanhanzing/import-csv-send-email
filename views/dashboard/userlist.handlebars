@@ -1,0 +1,46 @@
+{{> nav}}
+<div class='container-fluid'>
+  <div class='row send-email mt-4'>
+    <div class='col back-send'>
+      <form action='/' method='GET' novalidate>
+        <button type='submit' class='btn btn-primary'>Back</button>
+      </form>
+
+      <form action='send-email' method='POST' novalidate>
+        <input
+          type='text'
+          id='send-email'
+          name='emailList'
+          class='form-control'
+          style='display: none;'
+          value='{{emailData}}'
+        />
+
+        <button type='submit' class='btn btn-primary'>Send Email</button>
+      </form>
+    </div>
+  </div>
+  <div class='spread-sheet'>
+    <div class='table-wrapper'>
+      <table class='table table-striped'>
+        <thead>
+          <tr>
+            {{#each headers}}
+              <th scope='col'>{{this}}</th>
+            {{/each}}
+          </tr>
+        </thead>
+        <tbody>
+          {{#each data}}
+            <tr>
+              {{#each this}}
+                <td>{{this}}</td>
+              {{/each}}
+            </tr>
+          {{/each}}
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

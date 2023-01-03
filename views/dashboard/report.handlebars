@@ -1,0 +1,33 @@
+{{> nav}}
+<div class='container-fluid'>
+   <div class='row send-email mt-4'>
+    <div class='col back-send'>
+      <form action='/' method='GET' novalidate>
+        <button type='submit' class='btn btn-primary'>Dashboard</button>
+      </form>
+    </div>
+  </div>
+  <div class='spread-sheet'>
+    <div class='table-wrapper'>
+      <table class='table table-striped'>
+        <thead>
+          <tr>
+            {{!-- {{#each data}}
+              <th scope='col'>{{this}}</th>
+            {{/each}} --}}
+          </tr>
+        </thead>
+        <tbody>
+          {{#each data}}
+            <tr>
+              {{#each this}}
+                <td>{{this}}</td>
+              {{/each}}
+            </tr>
+          {{/each}}
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

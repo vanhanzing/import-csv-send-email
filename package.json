@@ -1,0 +1,24 @@
+{
+    "name": "import-csv-send-email",
+    "version": "1.0.0",
+    "description": "this code import csv data to your platform and you can choose to send email with amazon SES service with you custom design email template",
+    "main": "index.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "author": "prabesh",
+    "license": "ISC",
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    },
+    "dependencies": {
+        "csvtojson": "^2.0.10",
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "express-fileupload": "^1.4.0",
+        "express-handlebars": "^6.0.6",
+        "nodemailer": "^6.8.0",
+        "nodemailer-express-handlebars": "^5.0.0"
+    }
+}

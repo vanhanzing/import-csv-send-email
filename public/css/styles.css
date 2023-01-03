@@ -1,0 +1,23 @@
+.import-csv {
+  margin-top: 30px;
+}
+.table-wrapper {
+  margin-top: 20px;
+  /* max-width: 700px; */
+  overflow: scroll;
+}
+
+table {
+  position: relative;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+input[type='file'] {
+  display: inline-block;
+}
+
+.back-send {
+  display: flex;
+  justify-content: space-between;
+}
